@@ -10,13 +10,114 @@
     body {
       font-family: 'Jost', sans-serif;
       color: #36454F;
-      margin: 0;
+      margin: auto;
+      width: 80vw;
+    }
+    header {
+      font-size: 1.25em;
+    }
+    #shift-panels {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.25rem;
+    }
+    body img {
+      max-width: 75%;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
+    #pending-req {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.25rem;
+    }
+
+    @media (max-width: 480px) {
+      img {
+        max-width: 90vw;
+        height: auto;
+        display: block;
+        margin: auto;
+      }
     }
   </style>
 </head>
 
 <body>
+  <header>
+    <h1>Simplifying Scheduling For Managers: Redesigning Homebase</h1>
+  </header>
   <main>
-    <h1>Homebase Scheduling</h1>
+    <h2>Unifying Request Management And Cross-Platform Consistency For Manager Task Effiency</h2>
+    <picture>
+      <source srcset="images/Team Availability Shift View Final.png" media="(max-width:480px)">
+
+      <img src="images/Team Availability Shift View Final.png" style="width: 100vw;">
+    </picture><br>
+    <section id="logistics">
+      <b>
+        Jan 2025 - Mar 2025
+        <br>
+        Role - UX Researcher | UI Designer
+        <br>
+        Collaborators - Sophie Chin | Ryen Huang | Jacob McCoy
+      </b>
+    </section>
+    <p>
+      Through our user research, I found that pain points of using Homebase were a lack of
+      sorting and visiblity for viewing employees' scheduling requests and desired hours, 
+      and only being able to approve requests through the app but not the website.
+    </p>
+    <p>
+      Working with 3 other UX designers, I redesigned the existing Homebase app 
+      to improve its readability, ease of use, and to consolidate managers' workflows
+      into one platform as a course assignment in UC San Diego.
+      I contributed to redesigning the Homebase platform to improve readability 
+      and usability while consolidating 
+      the managers' workflows into a single, consistent experience across devices. 
+      Our solution improved the interface of the weekly schedule view and the accessibility
+      of using organizing functions, creating a more efficient scheduling process 
+      for busy managers.
+    </p>    
+    <p>
+      <b>UX Flow</b><br>
+      Identifying a managers's UX flow, under the persona of James Ray, I found
+      the entry point was a calendar-based dashboard which I wanted to keep for familiarity.
+    </p>
+    <img src="images/JRflow.png" style="width: 100vw;">
+
+    <p>
+      <b>Quick Schedule</b><br>
+      Changing the shift creation to a pop-up on the calendar dashboard allows managers to create
+      shifts quickly and seamlessly, while cutting down on excessive navigation 
+      and letting managers keep information about availability on screen in the background.
+    </p>
+    <div id="shift-panels">
+      <img src="images/Shift Panel Note ALt.png" style="width: 100vw;">
+      <img src="images/Shift Panel Note Final.png" style="width: 100vw;">
+    </div>
+    <p>
+      Two variations were created, with the second ultimately being favored by user 
+      testing, due to a simpler appearance and the ability to message through the same
+      pop-up panel.
+    </p>
+    <img src="images/Team Availability Shift View Final.png" style="width: 100vw;">
+
+    <p>
+      <b>Pending Requests</b><br>
+      I added a new panel for pending requests, with a focus on readability. Left to right 
+      shows the iterations, adjusting based on user feedback.
+    </p>
+    <div id="pending-req">
+      <img src="images/Frame 3.png" style="width: 100vw;">
+      <img src="images/Frame 4.png" style="width: 100vw;">
+      <img src="images/Frame 5.png" style="width: 100vw;">
+    </div>
+    <img src="images/Team Availability Pending Requests Final.png" style="width: 100vw">
+
+    <br><br><br><br>
+    <br><br><br><br>
+
   </main>
 </body>
