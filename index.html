@@ -10,11 +10,29 @@
     body {
       font-family: 'Jost', sans-serif;
       color: #36454F;
-      margin: auto;
-      width: 80vw;
     }
-    header {
-      font-size: 1.25em;
+    nav {
+        line-height: 1.5rem;
+        width: 90vw;
+        margin: auto;
+    }
+    header nav a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #36454F;
+        transition: color 0.2s;
+    }
+    header nav a:hover {
+        color: #982120;
+    }
+    header h1 {
+      font-size: 2.5em;
+      width: 80vw;
+      margin: auto;
+    }
+    main {
+      width: 80vw;
+      margin: auto;
     }
     #shift-panels {
       display: grid;
@@ -46,6 +64,13 @@
 
 <body>
   <header>
+    <nav>
+      <a href="https://encheng0706.github.io/portfolio/">main</a> 
+      <b>.</b>
+      <a href="https://encheng0706.github.io/portfolio/work.html">work</a>
+      <b>.</b>
+      <a href="https://encheng0706.github.io/portfolio/#contact">contact</a>
+    </nav>
     <h1>Simplifying Scheduling For Managers: Redesigning Homebase</h1>
   </header>
   <main>
